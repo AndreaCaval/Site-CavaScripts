@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.ico">
+    <title>CavaScripts</title>
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <div class="overlay-content">
+            <a href="#home" class="nav__link" onclick="closeNav()">Home</a>
+            <a href="#sites" class="nav__link" onclick="closeNav()">Sites</a>
+            <a href="#faq" class="nav__link" onclick="closeNav()">FAQ</a>
+            <a id="dashboard" onclick="closeNav()" href="https://moon-calls.hyper.co/" target="_blank" class="nav__link">Dashboard</a>
+        </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+
+    <header class="header" id="header">
+
+        <nav class="nav">
+            <i class="uil uil-bars" id="menuToggle" onclick="menuToggle()"></i>
+
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#sites" class="nav__link">Sites</a>
+            <a href="#faq" class="nav__link">FAQ</a>
+            <a id="dashboard" href="https://cava-script.hyper.co/" target="_blank" class="nav__link">Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container">
+                <div class="home__content">
+                    <a href="https://www.twitter.com/CavaScripts" target="_blank" title="twitter">
+                        <h1 class="logo__title">CavaScripts</h1>
+                    </a>
+                    <p> EU Automated Script. </p>
+                    <p> The one you need to Catch 'Em All!</p>
+                    <br><br>
+                    <a id="join" href="" target="_blank">Sold Out</a>
+
+                </div>
+                <div class="home__logo">
+                    <img class="logo__img" src="images/logo.ico" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SITES ====================-->
+        <section class="sites section reveal fade-bottom" id="sites">
+            <h1 class="section__title">Supported Sites</h1>
+            <div class="sites__container">
+            </div>
+        </section>
+
+        <!--==================== FAQ ====================-->
+        <section class="faq section reveal fade-left" id="faq">
+            <h1 class="section__title">FAQ</h1>
+            <div class="wrapper">
+                <div class="wrap">
+                    <input type="radio" id="tab-1" name="tabs">
+                    <label for="tab-1">
+                        <div>
+                            <p class="wrap__title">
+                                How much does a membership cost?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>Currently we offer two kinds of membership/subscription (choice up to customers):</p>
+                        <p>・Monthly basis renewal ➞ 60€/monthly ➞ Pay 60€ every month</p>
+                        <p>・Bimonthly basis renewal ➞ 100€/bimonthly ➞ Pay 100€ every 2 months</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-2" name="tabs">
+                    <label for="tab-2">
+                        <div>
+                            <p class="wrap__title"> Is it safe to purchase a membership?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>The payment system is safely handled by Hyper Dashboard & Stripe and customers can easily manage subscriptions by themselves from their own dedicated page on the Dashboard.</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-3" name="tabs">
+                    <label for="tab-3">
+                        <div>
+                            <p class="wrap__title">Which payment methods do you accept?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>At the moment the only payment method we can accept is Credit Card (every kind of Credit Card is accepted, also prepaid ones for whoever wants to feel even safer). Payment via Crypto might be added later in the future. </p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-4" name="tabs">
+                    <label for="tab-4">
+                        <div>
+                            <p class="wrap__title">Which is the difference between CavaScripts & other DAOs?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>CavaScripts is a private group with a cap set to 100 members! This means that we care of & pay attention to literally every single member we have. </p>
+                        <p>One of our slogans is "quality over quantity": we don't want to be the typical DAO / Alpha Group open to everyone with 500-1000+ members where no importance is given to the single individual. We'd rather keep the group limited
+                            & private to offer a top quality service for whoever pays for it!</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-5" name="tabs">
+                    <label for="tab-5">
+                        <div>
+                            <p class="wrap__title">Which platform do you use to provide your service/s?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>We provide all our sites via Discord. Once purchased a membership you will also automatically (through the Dashboard) get access to our private Discord server.</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-6" name="tabs">
+                    <label for="tab-6">
+                        <div>
+                            <p class="wrap__title">How can I join CavaScripts?
+                            </p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>Currently there are a few ways to join CavaScripts:</p>
+                        <p>・Waiting List form ➞ Fill the form, you'll be contacted by us (via Twitter) if selected</p>
+                        <p>・Recommendation from a member ➞ members can let in their frens through "recommendation"</p>
+                        <p>・Twitter giveaways ➞ We sometimes give away Renewal Memberships &/OR Free Trials</p>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <input type="radio" id="tab-7" name="tabs">
+                    <label for="tab-7">
+                        <div>
+                            <p class="wrap__title">I still have doubts, can I contact you? How can I contact you?</p>
+                        </div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="wrap_content">
+                        <p>Of course you can. We are 24/7 available via Twitter, feel free to drop us a direct message and we will reply to your questions asap!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div class="footer__names">
+                    <h1 class="footer__title">CavaScripts</h1>
+                    <p class="footer__subtitle"> EU Automated Script. </p>
+                    <p class="footer__subtitle"> The one you need to Catch 'Em All!</p>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="https://www.twitter.com/CavaScripts" target="_blank" class="footer__social" title="twitter">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copy">&#169; Copyright 2022 - CavaScripts</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
