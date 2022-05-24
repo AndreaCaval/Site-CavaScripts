@@ -85,6 +85,14 @@ a {
     font-weight: var(--big-font-size);
 }
 
+.info{
+    padding: 250px;
+    /* text-align: center; */
+}
+
+.info li{
+    list-style: none;
+}
 
 /*==================== LAYOUT ====================*/
 
@@ -207,12 +215,9 @@ a {
     color: var(--first-color-alt);
 }
 
-.logo__img {
-    height: 250px;
-}
-
 .home__container {
     display: flex;
+    width: 100%;
     gap: 50px;
 }
 
@@ -315,40 +320,11 @@ a {
     column-gap: 50px;
 }
 
-.sites__card__container {
-    border: 2px solid var(--first-color);
-    padding: 30px;
-    border-radius: 25px;
-    text-align: center;
-}
-
 .sites__title {
     text-align: center;
     font-family: var(--font-pokemon);
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     color: var(--first-color-alt);
-}
-
-.sites__card__img {
-    width: 100px;
-}
-
-.sites__card__title {
-    padding: 25px 0;
-    font-size: var(--h2-font-size);
-}
-
-.sites__card__div {
-    padding: 0 0 0 20px;
-    margin: auto;
-}
-
-.sites__card__list {
-    text-align: left;
-}
-
-.sites__card__list p {
-    margin: 0 0 0 -20px;
 }
 
 
@@ -491,7 +467,19 @@ input:checked~label .cross:after {
     font-size: var(--smaller-font-size);
     text-align: center;
     color: var(--text-color-light);
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer__about{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer__about a{
+    text-decoration: none;
+    color: var(--text-color-light);
+    
 }
 
 .footer__title,
@@ -566,6 +554,10 @@ input:checked~label .cross:after {
     .nav__link {
         display: none;
     }
+    .logo__img {
+        height: 150px;
+    }
+    
 }
 
 
@@ -625,10 +617,15 @@ input:checked~label .cross:after {
     .footer__bg {
         padding: 2rem 6rem;
     }
+    .logo__img {
+        height: 250px;
+    }
+    
 }
 
 @media screen and (min-width: 1250px) {
     .sites__container {
         grid-template-columns: repeat(5, 200px);
     }
+
 }

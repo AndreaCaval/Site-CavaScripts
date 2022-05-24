@@ -92,20 +92,13 @@ const SITES = [
     "Footdistrict",
     "Courir",
     "Onygo",
-    "MagicEden",
-    "OpenSea",
-    "FamousFoxes",
-    "CMV2",
-    "Amazon",
     "LDLC",
-    "NBB",
-    "Mediaworld"
+    "NBB"
 ]
 
 SITES.sort()
-SITES.reverse()
 
 SITES.forEach(element => {
-    const t = '<h2 class="sites__title">'+element+'</h2>'
-    document.querySelector(".sites__container").insertAdjacentHTML("afterbegin", t)
+    const t = '<h2 class="sites__title reveal fade-bottom">' + element + '</h2>'
+    document.querySelector(".sites__container").insertAdjacentHTML("beforeend", t)
 });
